@@ -4,6 +4,8 @@ import heroBg from '../assets/logos/home_header.jpg';
 import aboutBg from '../assets/SUN01828.jpg';
 import Navbar from '../components/Navbar';
 import logo from '../assets/logos/uisel_logo.png';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Home() {
   return (
@@ -26,12 +28,12 @@ export default function Home() {
       Connecting Bangladeshi talent with international opportunities through world-class training and ethical recruitment.
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="#contact" className="px-8 py-3 rounded-lg text-lg font-semibold transition" style={{ backgroundColor: '#18196b', color: '#fff' }}>
+      <HashLink to="/#contact" className="px-8 py-3 rounded-lg text-lg font-semibold transition" style={{ backgroundColor: '#18196b', color: '#fff' }}>
         Contact Us
-      </a>
-      <a href="#training" className="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition" style={{ color: '#18196b' }}>
+      </HashLink>
+      <HashLink to="/#training" className="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition" style={{ color: '#18196b' }}>
         Our Programs
-      </a>
+      </HashLink>
     </div>
   </div>
 </section>
@@ -376,7 +378,7 @@ export default function Home() {
           </div>
           <div className="mt-12 text-center">
             <p className="text-xl font-semibold mb-6">We don't just prepare people for jobs; we prepare them for lifelong careers beyond borders.</p>
-            <a href="#contact" className="bg-white px-8 py-3 rounded-lg text-lg font-semibold transition inline-block" style={{ color: '#18196b' }}>Start Your Journey</a>
+            <HashLink to="/#contact" className="bg-white px-8 py-3 rounded-lg text-lg font-semibold transition inline-block" style={{ color: '#18196b' }}>Start Your Journey</HashLink>
           </div>
         </div>
       </section>
@@ -593,13 +595,13 @@ export default function Home() {
     <p className="text-lg mb-6 max-w-2xl mx-auto">
       Call us today or visit our office to take the first step toward your international career.
     </p>
-    <a
-      href="/apply"
+    <Link
+      to="/apply"
       className="bg-white px-6 py-2 rounded-lg text-lg font-semibold transition inline-block"
       style={{ color: '#18196b' }}
     >
     Apply Now
-    </a>
+    </Link>
   </div>
 </section>
 
@@ -627,11 +629,11 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="#about" className="text-gray-400 hover:text-white transition">About Us</a></li>
-                <li><a href="#services" className="text-gray-400 hover:text-white transition">Services</a></li>
-                <li><a href="#global" className="text-gray-400 hover:text-white transition">Global Reach</a></li>
-                <li><a href="/training" className="text-gray-400 hover:text-white transition">Training</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white transition">Contact</a></li>
+                <li><HashLink to="/#about" className="text-gray-400 hover:text-white transition">About Us</HashLink></li>
+                <li><HashLink to="/#services" className="text-gray-400 hover:text-white transition">Services</HashLink></li>
+                <li><HashLink to="/#global" className="text-gray-400 hover:text-white transition">Global Reach</HashLink></li>
+                <li><Link to="/training" className="text-gray-400 hover:text-white transition">Training</Link></li>
+                <li><HashLink to="/#contact" className="text-gray-400 hover:text-white transition">Contact</HashLink></li>
               </ul>
             </div>
             {/* Column 3: Programs */}

@@ -4,6 +4,8 @@ import React from 'react';
 import trainingBg from '../assets/training_header.jpg';
 import logo from '../assets/logos/uisel_logo.png';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 // Country data for filter and flag display
 const COUNTRIES = [
@@ -82,12 +84,12 @@ export default function Training() {
       Comprehensive skill development programs tailored for international job markets
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-4">
-      <a
-        href="/apply"
+      <Link
+        to="/apply"
         className="px-6 py-3 rounded-lg bg-primary text-white font-semibold hover:bg-purple-700 transition"
       >
         Get Started
-      </a>
+      </Link>
     </div>
   </div>
 </section>
@@ -468,9 +470,9 @@ export default function Training() {
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Start Your International Career?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">Our admissions team is ready to guide you through the application process and help you choose the right program.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="/apply" className="bg-white px-8 py-3 rounded-lg text-lg font-semibold transition inline-block mr-4" style={{ color: '#18196b' }}>
+          <Link to="/apply" className="bg-white px-8 py-3 rounded-lg text-lg font-semibold transition inline-block mr-4" style={{ color: '#18196b' }}>
             <i className="fas fa-phone-alt mr-2" /> Apply Now
-          </a>
+          </Link>
           </div>
         </div>
       </section>
@@ -496,22 +498,22 @@ export default function Training() {
             <div>
               <h3 className="text-lg font-bold mb-4">Training Programs</h3>
               <ul className="space-y-2">
-                <li><a href="#marine" className="text-gray-400 hover:text-white transition">Marine & Shipbuilding</a></li>
-                <li><a href="#construction" className="text-gray-400 hover:text-white transition">Construction & Civil Works</a></li>
-                <li><a href="#industrial" className="text-gray-400 hover:text-white transition">Industrial & Technical</a></li>
-                <li><a href="#hospitality" className="text-gray-400 hover:text-white transition">Hospitality</a></li>
-                <li><a href="#healthcare" className="text-gray-400 hover:text-white transition">Healthcare & Caregiving</a></li>
+                <li><HashLink to="/training#marine" className="text-gray-400 hover:text-white transition">Marine & Shipbuilding</HashLink></li>
+                <li><HashLink to="/training#construction" className="text-gray-400 hover:text-white transition">Construction & Civil Works</HashLink></li>
+                <li><HashLink to="/training#industrial" className="text-gray-400 hover:text-white transition">Industrial & Technical</HashLink></li>
+                <li><HashLink to="/training#hospitality" className="text-gray-400 hover:text-white transition">Hospitality</HashLink></li>
+                <li><HashLink to="/training#healthcare" className="text-gray-400 hover:text-white transition">Healthcare & Caregiving</HashLink></li>
               </ul>
             </div>
             {/* Column 3: Quick Links */}
             <div>
               <h3 className="text-lg font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#about" className="text-gray-400 hover:text-white transition">About Us</a></li>
-                <li><a href="#services" className="text-gray-400 hover:text-white transition">Services</a></li>
-                <li><a href="#global" className="text-gray-400 hover:text-white transition">Global Reach</a></li>
-                <li><a href="/training" className="text-gray-400 hover:text-white transition">Training</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white transition">Contact</a></li>
+                <li><HashLink to="/#about" className="text-gray-400 hover:text-white transition">About Us</HashLink></li>
+                <li><HashLink to="/#services" className="text-gray-400 hover:text-white transition">Services</HashLink></li>
+                <li><HashLink to="/#global" className="text-gray-400 hover:text-white transition">Global Reach</HashLink></li>
+                <li><Link to="/training" className="text-gray-400 hover:text-white transition">Training</Link></li>
+                <li><HashLink to="/#contact" className="text-gray-400 hover:text-white transition">Contact</HashLink></li>
               </ul>
             </div>
             {/* Column 4: Contact Info */}
