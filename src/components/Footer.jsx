@@ -40,14 +40,13 @@ export default function Footer() {
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2">
-                <li className="flex items-center"><i className="fas fa-map-marker-alt mr-2" /> UISEL, 123 Main Road, Dhaka</li>
+                <li className="flex items-center"><i className="fas fa-map-marker-alt mr-2" /> UISEL, Rajendropur (Beside RAB 10 Headquarters - Mawa Dhaka Expressway), South Keraniganj, Dhaka</li>
                 <li className="flex items-center"><i className="fas fa-phone-alt mr-2" /> <a href="tel:+8801711752198" className="underline hover:text-white">+880 1711 752198</a></li>
                 <li className="flex items-center"><i className="fas fa-envelope mr-2" /> <a href="mailto:info@uisel.com" className="underline hover:text-white">info@uisel.com</a></li>
               </ul>
               <div className="flex space-x-4 mt-4">
-                <a href="#" className="hover:text-white"><i className="fab fa-facebook-f text-2xl" /></a>
-                <a href="#" className="hover:text-white"><i className="fab fa-linkedin-in text-2xl" /></a>
-                <a href="#" className="hover:text-white"><i className="fab fa-youtube text-2xl" /></a>
+                <a href="https://www.facebook.com/p/Universal-Institute-of-Skills-Entrepreneurship-Ltd-61575191434124/" className="hover:text-white"><i className="fab fa-facebook-f text-2xl" /></a>
+                <a href="https://www.youtube.com/@uiselbd" className="hover:text-white"><i className="fab fa-youtube text-2xl" /></a>
               </div>
             </div>
           </div>
