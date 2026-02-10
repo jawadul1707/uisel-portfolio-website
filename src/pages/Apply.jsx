@@ -1,10 +1,9 @@
 // src/pages/Apply.jsx
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import applyBg from '../assets/apply_header.jpg';
 import emailjs from 'emailjs-com';
 import logo from '../assets/logos/uisel_logo.png';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 // EmailJS config (replace with your own IDs from emailjs.com dashboard)
 const EMAILJS_SERVICE_ID = 'service_employee';
 const EMAILJS_TEMPLATE_ID_EMPLOYEE = 'template_k4i46vn';
@@ -333,8 +332,8 @@ export default function Apply() {
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} Universal Institute of Skills & Entrepreneurship Ltd. (UISEL). All rights reserved.</p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white transition">Terms of Service</a>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Privacy Policy</button>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Terms of Service</button>
             </div>
           </div>
         </div>

@@ -29,11 +29,11 @@ export default function Footer() {
             <div>
               <h4 className="font-bold mb-4">Programs</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition">SSW Japan</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">EPS Korea</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">G2G Middle East</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">TITP</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Custom Training</a></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">SSW Japan</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">EPS Korea</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">G2G Middle East</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">TITP</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">Custom Training</button></li>
               </ul>
             </div>
             {/* Column 4: Contact & Social */}
@@ -53,8 +53,8 @@ export default function Footer() {
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} UISEL. All rights reserved.</p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white transition">Terms of Service</a>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Privacy Policy</button>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Terms of Service</button>
             </div>
           </div>
         </div>
