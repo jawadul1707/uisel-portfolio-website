@@ -556,7 +556,7 @@ export default function Home() {
 
       <div className="mb-3 flex items-center justify-center">
         <i className="fas fa-map-marker-alt mr-3 text-xl text-white" />
-        <span>UISEL, 123 Main Road, Dhaka, Bangladesh</span>
+        <span>UISEL, Rajendropur (Beside RAB 10 Headquarters - Mawa Dhaka Expressway), South Keraniganj, Dhaka</span>
       </div>
 
       <div className="mb-3 flex items-center justify-center">
@@ -574,9 +574,8 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center space-x-4 mt-4">
-        <button className="hover:text-gray-200" aria-label="Facebook"><i className="fab fa-facebook-f text-2xl" /></button>
-        <button className="hover:text-gray-200" aria-label="LinkedIn"><i className="fab fa-linkedin-in text-2xl" /></button>
-        <button className="hover:text-gray-200" aria-label="YouTube"><i className="fab fa-youtube text-2xl" /></button>
+        <a href="https://www.facebook.com/p/Universal-Institute-of-Skills-Entrepreneurship-Ltd-61575191434124/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200"><i className="fab fa-facebook-f text-2xl" /></a>
+        <a href="https://www.youtube.com/@uiselbd" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200"><i className="fab fa-youtube text-2xl" /></a>
       </div>
     </div>
   </div>
@@ -650,14 +649,13 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2">
-                <li className="flex items-center"><i className="fas fa-map-marker-alt mr-2" /> UISEL, 123 Main Road, Dhaka</li>
+                <li className="flex items-center"><i className="fas fa-map-marker-alt mr-2" /> UISEL, Rajendropur (Beside RAB 10 Headquarters - Mawa Dhaka Expressway), South Keraniganj, Dhaka</li>
                 <li className="flex items-center"><i className="fas fa-phone-alt mr-2" /> <a href="tel:+8801711752198" className="underline hover:text-white">+880 1711 752198</a></li>
                 <li className="flex items-center"><i className="fas fa-envelope mr-2" /> <a href="mailto:info@uisel.com" className="underline hover:text-white">info@uisel.com</a></li>
               </ul>
               <div className="flex space-x-4 mt-4">
-                <button className="hover:text-white" aria-label="Facebook"><i className="fab fa-facebook-f text-2xl" /></button>
-                <button className="hover:text-white" aria-label="LinkedIn"><i className="fab fa-linkedin-in text-2xl" /></button>
-                <button className="hover:text-white" aria-label="YouTube"><i className="fab fa-youtube text-2xl" /></button>
+                <a href="https://www.facebook.com/p/Universal-Institute-of-Skills-Entrepreneurship-Ltd-61575191434124/" target="_blank" rel="noopener noreferrer" className="hover:text-white"><i className="fab fa-facebook-f text-2xl" /></a>
+                <a href="https://www.youtube.com/@uiselbd" target="_blank" rel="noopener noreferrer" className="hover:text-white"><i className="fab fa-youtube text-2xl" /></a>
               </div>
             </div>
           </div>
