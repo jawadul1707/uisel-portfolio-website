@@ -4,7 +4,6 @@ import React from 'react';
 import trainingBg from '../assets/training_header.jpg';
 import logo from '../assets/logos/uisel_logo.png';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 // Country data for filter and flag display
 const COUNTRIES = [
@@ -528,8 +527,8 @@ export default function Training() {
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} Universal Institute of Skills & Entrepreneurship Ltd. (UISEL). All rights reserved.</p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white transition">Terms of Service</a>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Privacy Policy</button>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Terms of Service</button>
             </div>
           </div>
         </div>

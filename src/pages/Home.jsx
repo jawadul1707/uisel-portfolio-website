@@ -4,7 +4,6 @@ import heroBg from '../assets/logos/home_header.jpg';
 import aboutBg from '../assets/SUN01828.jpg';
 import Navbar from '../components/Navbar';
 import logo from '../assets/logos/uisel_logo.png';
-import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -575,9 +574,9 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center space-x-4 mt-4">
-        <a href="#" className="hover:text-gray-200"><i className="fab fa-facebook-f text-2xl" /></a>
-        <a href="#" className="hover:text-gray-200"><i className="fab fa-linkedin-in text-2xl" /></a>
-        <a href="#" className="hover:text-gray-200"><i className="fab fa-youtube text-2xl" /></a>
+        <button className="hover:text-gray-200" aria-label="Facebook"><i className="fab fa-facebook-f text-2xl" /></button>
+        <button className="hover:text-gray-200" aria-label="LinkedIn"><i className="fab fa-linkedin-in text-2xl" /></button>
+        <button className="hover:text-gray-200" aria-label="YouTube"><i className="fab fa-youtube text-2xl" /></button>
       </div>
     </div>
   </div>
@@ -640,11 +639,11 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4">Programs</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition">SSW Japan</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">EPS Korea</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">G2G Middle East</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">TITP</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Custom Training</a></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">SSW Japan</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">EPS Korea</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">G2G Middle East</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">TITP</button></li>
+                <li><button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer text-left p-0">Custom Training</button></li>
               </ul>
             </div>
             {/* Column 4: Contact & Social */}
@@ -656,17 +655,17 @@ export default function Home() {
                 <li className="flex items-center"><i className="fas fa-envelope mr-2" /> <a href="mailto:info@uisel.com" className="underline hover:text-white">info@uisel.com</a></li>
               </ul>
               <div className="flex space-x-4 mt-4">
-                <a href="#" className="hover:text-white"><i className="fab fa-facebook-f text-2xl" /></a>
-                <a href="#" className="hover:text-white"><i className="fab fa-linkedin-in text-2xl" /></a>
-                <a href="#" className="hover:text-white"><i className="fab fa-youtube text-2xl" /></a>
+                <button className="hover:text-white" aria-label="Facebook"><i className="fab fa-facebook-f text-2xl" /></button>
+                <button className="hover:text-white" aria-label="LinkedIn"><i className="fab fa-linkedin-in text-2xl" /></button>
+                <button className="hover:text-white" aria-label="YouTube"><i className="fab fa-youtube text-2xl" /></button>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} UISEL. All rights reserved.</p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white transition">Terms of Service</a>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Privacy Policy</button>
+              <button className="text-gray-400 hover:text-white transition bg-transparent border-none cursor-pointer p-0">Terms of Service</button>
             </div>
           </div>
         </div>
