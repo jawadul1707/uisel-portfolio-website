@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# UISEL — Universal Institute of Skills & Entrepreneurship (Portfolio Website)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Global Skills for a Connected Future — a responsive marketing and application site built with React for UISEL (Universal Institute of Skills & Entrepreneurship Ltd.), showcasing programs, accreditations, training areas, and providing application forms for trainees and employer partners.
 
-## Available Scripts
+Badges
+- Framework: Create React App + React 19
+- Styling: Tailwind CSS + custom CSS
+- Routing: react-router-dom
+- Email: EmailJS (client-side form email integration)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of contents
+- [Quick summary](#quick-summary)
+- [Features](#features)
+- [Stack](#stack)
+- [Project structure](#project-structure)
+- [Getting started](#getting-started)
+- [Configuration / Environment variables](#configuration--environment-variables)
+- [Build & deploy](#build--deploy)
+- [Notes & troubleshooting](#notes--troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Quick summary
+This repository contains a production-ready single-page React website for UISEL with:
+- Fully responsive landing/home pages that present services, training areas, accreditations, testimonials, global reach and contact information.
+- Dedicated pages and client-side application forms for Applicants (employees/trainees) and Employers that send emails using EmailJS.
+- Modular React component structure for Navbar, Footer, and ScrollToTop, plus page components for Home, Training and Apply.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- Responsive, accessible UI with Tailwind CSS + custom styles
+- React Router (Routes) for client-side navigation (/, /training, /apply)
+- EmailJS integration to submit forms from the client
+- Static assets (logos, hero images, flags) in src/assets
+- Clean, componentized React pages: Home.jsx, Training.jsx, Apply.jsx
+- Reusable UI components: Navbar.jsx, Footer.jsx, ScrollToTop.jsx
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Stack
+- Language(s): JavaScript (ES202x)
+- Framework / runtime: React 19 (Create React App scaffold)
+- Notable libraries:
+  - react-router-dom (routing)
+  - tailwindcss + postcss (utility-first styling)
+  - emailjs-com (client-side email delivery)
+  - @fortawesome/fontawesome-free (icons)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project structure (top-level, annotated)
